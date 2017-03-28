@@ -1,0 +1,35 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`estimatr-organizations`
+Organizations
+
+@demo demo/index.html
+-->
+
+<dom-module id="estimatr-organizations">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    class MyElement extends Polymer.Element {
+      static get is() { return 'estimatr-organizations'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'estimatr-organizations'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(MyElement.is, MyElement);
+  </script>
+</dom-module>
